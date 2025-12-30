@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Global CSS for consistent styling across all pages -->
+  <link rel="stylesheet" href="global.css">
+  <!-- Page-specific CSS for Tic Tac Toe page -->
+  <link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+<body>
+  <!-- Bootstrap container: Provides responsive max-width, centers content, and adds horizontal padding -->
+  <!-- Using 'container' (not 'container-fluid') because we want centered, fixed-width layout -->
+  <div class="container">
+    <!-- text-center: Centers text content horizontally -->
+    <h1 class="text-center">❌⭕ Tic Tac Toe</h1>
+
+    <!-- Game container with Bootstrap utilities -->
+    <!-- mx-auto: Centers block element horizontally (margin-left and margin-right auto) -->
+    <!-- my-4: Adds vertical margin (top and bottom) for spacing -->
+    <!-- p-4: Adds padding on all sides -->
+    <!-- text-center: Centers text content horizontally -->
+    <div class="game-container mx-auto my-4 p-4 text-center" style="width: 300px;">
+
+      <!-- Game Board -->
+      <div class="board">
+        <button></button>
+        <button></button>
+        <button></button>
+        <br>
+        <button></button>
+        <button></button>
+        <button></button>
+        <br>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+
+      <!-- Game Status -->
+      <!-- Bootstrap alerts improve system status visibility through color coding, clear visual hierarchy, and consistent styling -->
+      <!-- alert: Base alert component with padding, border, and rounded corners for better visibility -->
+      <!-- alert-warning: Yellow/orange alert for neutral states (turns, draws) - draws attention without indicating success -->
+      <!-- text-center: Centers the alert text content horizontally -->
+      <div id="game-status" class="alert alert-warning text-center" role="alert">Player X's turn</div>
+
+      <!-- Controls -->
+      <!-- Bootstrap buttons improve usability by providing consistent styling, better touch targets, hover/focus states, and accessibility features -->
+      <!-- btn: Base button class that provides proper padding, border-radius, and cursor styling -->
+      <!-- btn-secondary: Secondary action button with gray color - used for less prominent actions like "Reset" -->
+      <button class="btn btn-secondary" id="reset-btn">Reset Game</button>
+      <br><br>
+
+    </div>
+
+    <!-- Navigation -->
+    <!-- text-center: Centers the navigation link horizontally -->
+    <!-- Hover feedback helps user interaction by providing immediate visual confirmation that the link is clickable -->
+    <div class="text-center mt-3">
+      <a href="index.html">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <!-- Load JavaScript at the end so all HTML elements are ready -->
+  <script src="tic-tac-toe.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

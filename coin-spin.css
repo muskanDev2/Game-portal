@@ -1,0 +1,13 @@
+/* ===== COIN SPIN PAGE SPECIFIC STYLES ===== */
+/* This file contains styles unique to the coin-spin.html page */
+
+/* ===== COIN RESULT ALERT ===== */
+/* Styles for the coin result message (shows Heads or Tails) */
+/* Bootstrap alerts are block elements, so we center with margin */
+#coin-result {
+    /* Maximum width to keep alert compact */
+    max-width: 300px;
+    /* Centers the alert horizontally and adds vertical spacing */
+    margin: 20px auto;
+}
+

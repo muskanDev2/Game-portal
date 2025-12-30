@@ -1,0 +1,27 @@
+/* ===== TIC TAC TOE PAGE SPECIFIC STYLES ===== */
+/* This file contains styles unique to the tic-tac-toe.html page */
+
+/* ===== GAME BOARD BUTTONS ===== */
+/* Custom styles for the game board buttons */
+/* These buttons are the 3x3 grid cells where players place X and O */
+.board button {
+    /* Fixed width for square buttons */
+    width: 60px;
+    /* Fixed height for square buttons */
+    height: 60px;
+    /* Font size for X and O symbols */
+    font-size: 20px;
+    /* Small margin between buttons for spacing */
+    margin: 3px;
+}
+
+/* ===== GAME STATUS ALERT ===== */
+/* Styles for the game status message (shows current player's turn or game result) */
+/* Bootstrap alerts are block elements, so we center with margin */
+#game-status {
+    /* Maximum width to keep alert compact */
+    max-width: 300px;
+    /* Centers the alert horizontally and adds vertical spacing */
+    margin: 20px auto;
+}
+

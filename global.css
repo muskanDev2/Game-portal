@@ -1,0 +1,107 @@
+/* ===== GLOBAL STYLES ===== */
+/* This file contains styles that are shared across all pages in the gaming portal */
+
+/* ===== BODY STYLES ===== */
+/* Sets the overall page background, font, and spacing */
+/* HCI Principle: Aesthetic and Minimalist Design - Eye-catching pattern background creates immersive gaming atmosphere while maintaining readability */
+/* HCI Principle: Consistency - Using same font family across all pages creates visual unity and familiarity */
+/* HCI Principle: Readability - Consistent font size and line spacing improve reading experience */
+body {
+    /* Vibrant gradient base with gaming-style colors (bright cyan, purple, pink, mint) */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+    /* Pattern overlay: diagonal stripes for visual interest */
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.05) 10px,
+            rgba(255, 255, 255, 0.05) 20px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 10px,
+            rgba(0, 0, 0, 0.03) 10px,
+            rgba(0, 0, 0, 0.03) 20px
+        );
+    /* Keeps background fixed when scrolling for consistent look */
+    background-attachment: fixed;
+    /* Ensures background covers full viewport height */
+    min-height: 100vh;
+    /* Top padding prevents content from touching browser edge */
+    padding-top: 20px;
+    /* Bottom padding provides breathing room at page bottom */
+    padding-bottom: 20px;
+    /* System fonts ensure fast loading and consistent appearance across devices */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Standard readable size - not too small, not too large */
+    font-size: 16px;
+    /* Line spacing makes text easier to read */
+    line-height: 1.5;
+    /* Dark text color for better contrast against vibrant background */
+    color: #333;
+}
+
+/* ===== HEADINGS ALIGNMENT ===== */
+/* Centers all headings for consistent layout */
+h1 {
+    text-align: center;
+}
+
+/* ===== CONTAINER STYLES ===== */
+/* Main content containers with consistent styling */
+/* HCI Principle: Consistency - Uniform spacing between major sections creates predictable layout */
+/* Ensures content containers have good contrast against vibrant gaming background for readability */
+.container {
+    /* Space below container for better content separation */
+    margin-bottom: 30px;
+    /* More opaque white background for better text readability against vibrant pattern */
+    background-color: rgba(255, 255, 255, 0.95);
+    /* Rounded corners for modern gaming aesthetic */
+    border-radius: 10px;
+    /* Additional padding inside container */
+    padding: 20px;
+    /* Stronger shadow for better depth and separation from vibrant background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Subtle border for extra definition */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===== CENTERING MAIN CONTAINERS ===== */
+/* Centers main game containers horizontally */
+.game-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== SPACING ===== */
+/* HCI Principle: Readability and Visual Hierarchy - Proper spacing helps users distinguish between different content sections */
+/* Additional spacing utilities can be added here if needed */
+
+/* ===== NAVIGATION LINKS ===== */
+/* Styles for all navigation links across pages */
+/* HCI Principle: Feedback - Hover states provide immediate visual feedback, confirming the link is interactive */
+/* HCI Principle: Affordance - Visual changes on hover indicate clickability, making navigation more discoverable */
+a {
+    /* Remove default underline for cleaner look */
+    text-decoration: none;
+    /* Bootstrap primary blue color */
+    color: #0d6efd;
+    /* Smooth transition for hover effect */
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* Hover feedback: Subtle color darkening and underline appear to indicate interactivity */
+/* This helps users understand the link is clickable before they click */
+a:hover {
+    /* Slightly darker blue on hover - provides clear feedback */
+    color: #0a58ca;
+    /* Underline appears on hover - traditional link affordance */
+    text-decoration: underline;
+}
+
+/* ===== BUTTON DEFAULT STYLES ===== */
+/* Base button styles - Bootstrap classes handle most styling, but we can add custom defaults here if needed */
+/* Note: Most buttons use Bootstrap classes (btn, btn-primary, btn-secondary) which provide default styling */
+
